@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#201E1E"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:hint="result"
+        android:paddingTop="30pt"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/textToParse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="on_logn"
+                android:text="LN" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="on_log"
+                android:text="LOG" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="onLParan"
+                android:text="(" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="onAllClear"
+                android:text="AC" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="on_cos"
+                android:text="COS" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="on_sin"
+                android:text="SIN" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="onRParan"
+                android:text=")" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="onDiv"
+                android:text="/" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="on_7"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="on_8"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="on_9"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="onMul"
+                android:text="*" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="on_4"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="on_5"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="on_6"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="onMinus"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/button23"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="on_1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="on_2"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="on_3"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:onClick="onPlus"
+                android:text="+" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/button24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on_0"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/button25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on_Dot"
+                android:text="." />
+
+            <Button
+                android:id="@+id/button26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on_9"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/button28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickButton"
+                android:text="=" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
